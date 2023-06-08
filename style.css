@@ -1,0 +1,102 @@
+*{
+    font-family: 'Kalam', cursive;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;   
+    font-style: italic;
+}
+.header,footer{
+    margin: 0;
+    padding: 1rem;
+    background: linear-gradient(90deg, orange,rgba(251, 255, 0, 0.522));
+}
+.container{
+    margin: 1rem auto;
+    height: 20vh;
+    min-height: 10vh;
+    width: 70%;  
+    padding: 1rem;
+    text-align: start;
+    border-radius: 1rem;
+    letter-spacing: 1px;
+
+}
+#txt-input{
+}
+#input-btn{
+    font-size: larger;
+    display: block;
+    margin: 0rem auto 0.6rem auto;
+    padding: 1rem;
+    background-color: orange;
+    border: none;
+    border-radius: 1rem;
+}
+#output{
+box-sizing: border-box;
+border: 1px solid rgb(126, 126, 126);
+margin: 1rem auto;
+scroll-behavior: smooth;
+overflow-y: scroll;
+}
+footer{
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 0.6rem 10rem;
+    font-weight: 500;
+}
+.font-large{
+    font-size:large ;
+}
+.bold{
+    font-weight: bold;
+}
+.text-light{
+    color: rgb(0, 0, 0,0.8);
+}
+::-webkit-scrollbar{
+   color: red;
+   width: 0.2rem;
+   height: 0.2rem;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scroll thumb */
+    border-radius: 5px; /* Rounded corners */
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color on hover */
+}
+
+@media screen and (max-width:760px) {
+    body{
+     font-size: small;
+    }
+    #txt-input{
+        font-size: small;
+    }
+    #output{
+        font-size: small;
+    }
+    .container{
+        width: 80%;
+    }
+    footer{
+        padding: 0.4rem 3rem;
+    }
+}
+@media  screen and (max-width:480px) {
+    .container{
+        width: 85%;
+    }
+    footer{
+        padding: 0.2rem 1rem;
+    }
+}
